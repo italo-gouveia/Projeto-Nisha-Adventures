@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>es-game</name>
+    <events>
+        <variable constant="0" name="life" sid="217673041081241" static="0" type="number">3</variable>
+        <event-group description="Funções iniciais" sid="608455810608848" title="SYSTEM">
+            <sub-events>
+                <event-block sid="532143143061620">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="424076583380959" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="845017522996878" type="heroanimation">
+                            <param id="0" name="X">hero.X</param>
+                            <param id="1" name="Y">hero.Y</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="206818373231385" type="heroanimation">
+                            <param id="0" name="Pin to">hero</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="976606068344121" type="fly">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="826140635424552" type="gameoverback2">
+                            <param id="0" name="Pin to">gameoverpanel</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="418332450370897" type="gameovercontinue2">
+                            <param id="0" name="Pin to">gameoverpanel</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="810053708279841">
+            <conditions>
+                <condition id="3" name="On touched object" sid="945876412906584" type="Touch">
+                    <param id="0" name="Object">Starticon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="728154263787469" type="System">
+                    <param id="0" name="Layout">Level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="198853808574144">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="675079471090294" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Scroll to X" sid="315305467058875" type="System">
+                    <param id="0" name="X">hero.X</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="628328716213332" title="HERO">
+            <sub-events>
+                <event-block sid="837667235338536">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="535217855308395" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="883372400556522" type="heroanimation">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="580608372979116">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="669556581131524" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="131036873175896" type="heroanimation">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="207896528322241">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="968697530657802" type="hero" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="342610903686107" type="heroanimation">
+                            <param id="0" name="Animation">&quot;jumping&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="798215122036896">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="566870652070597" type="hero" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="627800931629727">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="720150266074849" type="hero" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="907714209201091" type="heroanimation">
+                                    <param id="0" name="Animation">&quot;wallking&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="875490018662062">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="923559418507090" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="263797616446259" type="heroanimation">
+                                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="234875076887667">
+                    <conditions>
+                        <condition behavior="Platform" id="7" name="On stopped" sid="461858513177056" type="hero" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="197001341016330" type="heroanimation">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="659680620324507">
+                    <conditions>
+                        <condition behavior="Platform" id="8" name="On moved" sid="940588743355970" type="hero" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="808972352291067" type="heroanimation">
+                            <param id="0" name="Animation">&quot;wallking&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="619047625506568" title="ENEMIES">
+            <sub-events>
+                <event-block any="1" sid="265563039692766">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="963245654923475" type="System">
+                            <param id="0" name="Object">snail</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="184760376018343">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="808215568360693" type="System">
+                                    <param id="0" name="First value">snail. sine. CyclePosition</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">0.25</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="100412487650879" type="System">
+                                    <param id="0" name="First value">snail. sine. CyclePosition</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0.75</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="821335885440740" type="snail">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="456879523614559">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="603540488492926" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="537287242915657" type="snail">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="420691056595662">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="879158084586933" type="System">
+                            <param id="0" name="Interval (seconds)">random (0.5)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="691990847045890" type="blockerMad">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="192153165145106">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="171099775511661" type="blockerMad" />
+                        <condition behavior="Platform" id="4" name="Is falling" sid="805604862656972" type="blockerMad" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="541347199884379" type="blockerMad">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="536553216629462">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="661880080899570" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="719040195205231" type="blockerMad">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="829937120042035">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="761239533014072" type="slime">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">-100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="933223756616425" type="slime">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="712015218114008" title="HEALTH">
+            <sub-events>
+                <event-block sid="223925362141560">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="153930541051738" type="hero">
+                            <param id="0" name="Object">blockerMad</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="721300383754787">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="757495664452980" type="hero">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">blockerMad.Y-5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="160450232622568" type="blockerMad" />
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="184761866399896" type="hero">
+                                    <param id="0" name="Vector Y">-500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="624248462239654">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="998573017848999" type="System" />
+                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="640193418280653" type="heroanimation" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="483342407041774" type="System">
+                                    <param id="0" name="Variable">life</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="332414708788132" type="Sprite9">
+                                    <param id="0" name="Frame number">life</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="370596400686197" type="heroanimation">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="734992241840940">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="431218256451239" type="hero">
+                            <param id="0" name="Object">fly</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="728403819431650">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="988699803558711" type="hero">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">fly.Y-5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="218359398255988" type="fly" />
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="742988032380213" type="hero">
+                                    <param id="0" name="Vector Y">-500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="150327108082259">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="351810736549651" type="System" />
+                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="527939747189392" type="heroanimation" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="943808574523079" type="System">
+                                    <param id="0" name="Variable">life</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="509630168518020" type="Sprite9">
+                                    <param id="0" name="Frame number">life</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="209440568691834" type="heroanimation">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="653295209539615">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="662392435841734" type="hero">
+                            <param id="0" name="Object">slime</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="460000807916706">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="980977583482415" type="hero">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">slime.Y-5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="147512913717234" type="slime" />
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="341094634392989" type="hero">
+                                    <param id="0" name="Vector Y">-500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="955427007583485">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="264735624882597" type="System" />
+                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="936259600744908" type="heroanimation" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="646128543504603" type="System">
+                                    <param id="0" name="Variable">life</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="855539152298155" type="Sprite9">
+                                    <param id="0" name="Frame number">life</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="889344759780630" type="heroanimation">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="226364785469274">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="612515267125421" type="hero">
+                            <param id="0" name="Object">snail</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="475898289794074">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="168438038700022" type="hero">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">snail.Y-5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="551643115113207" type="snail" />
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="821986409462708" type="hero">
+                                    <param id="0" name="Vector Y">-500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="535675311520272">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="842985558731804" type="System" />
+                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="475090587575288" type="heroanimation" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="107155372331832" type="System">
+                                    <param id="0" name="Variable">life</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="635616338231654" type="Sprite9">
+                                    <param id="0" name="Frame number">life</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="186255824006694" type="heroanimation">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="431440774992535">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="918250646872549" type="hero">
+                            <param id="0" name="Object">spike</param>
+                        </condition>
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="397481881777325" type="heroanimation" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="587570713132540" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="279962218513317" type="Sprite9">
+                            <param id="0" name="Frame number">life</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="883495820099521" type="heroanimation">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="842246505370575" title="GAME OVER">
+            <sub-events>
+                <event-block sid="115724568713022">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="450030312299299" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="1" name="Stop flashing" sid="431769221533776" type="heroanimation" />
+                        <action id="-12" name="Set group active" sid="601373377256203" type="System">
+                            <param id="0" name="Group name">&quot;HERO&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="913339540671503" type="Shadow">
+                            <param id="0" name="X">640</param>
+                            <param id="1" name="Y">360</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="927627873431073" type="Shadow">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="673967301201401" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="656688830976327">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="569269823427912" type="gameoverpanel">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">360</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="369692259569593" type="gameoverpanel">
+                                    <param id="0" name="Y">gameoverpanel.Y+5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="579413195671676">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="500375971484189" type="Touch">
+                            <param id="0" name="Object">gameoverback2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="744312147064660" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="155169643791177" type="System" />
+                        <action id="-12" name="Set group active" sid="323734658997015" type="System">
+                            <param id="0" name="Group name">&quot;HERO&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="622557127054874" type="System">
+                            <param id="0" name="Layout">Nishaadventures</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="444994817368224">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="905452850479682" type="Touch">
+                            <param id="0" name="Object">gameovercontinue2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="403588273061567" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="583082231011050" type="System" />
+                        <action id="-12" name="Set group active" sid="311251197756990" type="System">
+                            <param id="0" name="Group name">&quot;HERO&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="125175375425601" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

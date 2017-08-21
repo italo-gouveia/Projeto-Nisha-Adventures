@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>primeiro jogo</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author>Italo Gouveia</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3ctrgaogxvl1g</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="Twitter" version="1">Twitter</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Nishaadventures</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Twitter1" sid="335889738171393">
+            <plugin id="Twitter" />
+        </object-type>
+        <object-type name="Debug" sid="323882003237873">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Credits" sid="683698961484109">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846443067989372" speed="5">
+                    <frame duration="1" hotspotX="0.501945" hotspotY="0.5" original-source="D:\gui-mobile-pack\credits.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="294712653822373">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994636559537601" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\kenney-platformer-art-base-pack\Player\p1_stand.png">
+                        <collision-poly>
+                            <point x="0.151515" y="0.108696" />
+                            <point x="0.5" y="0" />
+                            <point x="0.848485" y="0.108696" />
+                            <point x="0.939394" y="0.5" />
+                            <point x="0.772727" y="0.836957" />
+                            <point x="0.5" y="0.902174" />
+                            <point x="0.166667" y="0.880435" />
+                            <point x="0.0454545" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="687620118331293">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Nisha1" sid="617529198113068">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="468093947465845" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\Players\bunny1_walk1.png">
+                        <collision-poly>
+                            <point x="0.341667" y="0.20398" />
+                            <point x="0.5" y="0.00497512" />
+                            <point x="0.766667" y="0.139303" />
+                            <point x="0.975" y="0.497512" />
+                            <point x="0.9" y="0.940298" />
+                            <point x="0.5" y="0.900497" />
+                            <point x="0.1" y="0.940298" />
+                            <point x="0.025" y="0.497512" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="316912854541673">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908174758944385" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502463" original-source="C:\Users\Italo\Downloads\14619941_746199992186002_862838041_n.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="262158691317317">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156942730657361" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Italo\Downloads\14699993_746201175519217_2056323806_n.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Starticon" sid="426348097220242">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="105146553254558" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\Icones para criação de jogos\windows-start-icon_186614.png">
+                        <collision-poly>
+                            <point x="0.150391" y="0.150391" />
+                            <point x="0.5" y="0.00390625" />
+                            <point x="0.851563" y="0.148438" />
+                            <point x="0.998047" y="0.5" />
+                            <point x="0.851563" y="0.851563" />
+                            <point x="0.5" y="0.996094" />
+                            <point x="0.150391" y="0.849609" />
+                            <point x="0.00585938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="532489459643735">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457048900297433" speed="5">
+                    <frame duration="1" hotspotX="0.500468" hotspotY="0.500978" original-source="C:\Users\Italo\Downloads\14724036_746206512185350_1309555278_o.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="425223718766032">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground2" sid="438279358896576">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\Background\bg_layer1.png" />
+        </object-type>
+        <object-type name="Titlegame" sid="111196227891873">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Nisha2" sid="597050112969755">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109219209182457" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502618" original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\Players\bunny1_ready.png">
+                        <collision-poly>
+                            <point x="0.175" y="0.109948" />
+                            <point x="0.5" y="0.256545" />
+                            <point x="0.825" y="0.109948" />
+                            <point x="0.958333" y="0.497382" />
+                            <point x="0.825" y="0.890052" />
+                            <point x="0.5" y="0.947644" />
+                            <point x="0.175" y="0.890052" />
+                            <point x="0.0416667" y="0.497382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="facebook" sid="647393658502290">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653277067646194" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\facebook.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="twitter" sid="681944968465811">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507597038487616" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\twitter.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="googleplus" sid="237729168599442">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305130328632989" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\googleplus.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="409531815635916">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="floormain" sid="740060069614480">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="221948129785190">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\grassRight.png" />
+        </object-type>
+        <object-type name="floorextra" sid="114075441136653">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="150950486708151">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\grassCenter.png" />
+        </object-type>
+        <object-type name="cloud" sid="784228947097977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="297120491593375" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\cloud1.png">
+                        <collision-poly>
+                            <point x="0.179688" y="0.323944" />
+                            <point x="0.5" y="0" />
+                            <point x="0.789063" y="0.380282" />
+                            <point x="0.9375" y="0.492958" />
+                            <point x="0.945313" y="0.901408" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0546875" y="0.901408" />
+                            <point x="0.101563" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\cloud2.png">
+                        <collision-poly>
+                            <point x="0.224806" y="0.408451" />
+                            <point x="0.496124" y="0" />
+                            <point x="0.782946" y="0.394366" />
+                            <point x="0.790698" y="0.492958" />
+                            <point x="0.945736" y="0.901408" />
+                            <point x="0.496124" y="1" />
+                            <point x="0.0542636" y="0.901408" />
+                            <point x="0.108527" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\cloud3.png">
+                        <collision-poly>
+                            <point x="0.155039" y="0.28169" />
+                            <point x="0.496124" y="0" />
+                            <point x="0.875969" y="0.225352" />
+                            <point x="0.976744" y="0.492958" />
+                            <point x="0.945736" y="0.901408" />
+                            <point x="0.496124" y="1" />
+                            <point x="0.0542636" y="0.901408" />
+                            <point x="0.108527" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spike" sid="373862255816163">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="929130539536687">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="257060132245338" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\spikes.png">
+                        <collision-poly>
+                            <point x="0.164286" y="0.517857" />
+                            <point x="0.844643" y="0.514286" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ornament" sid="659203346842885">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="285293512283294" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\cactus.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\plant.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\plantPurple.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\rock.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\mushroomBrown.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Items\mushroomRed.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\fence.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\fenceBroken.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\signExit.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\signRight.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassHalfLeft" sid="101177429601869">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="640905295784517">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="959223864245689" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\grassHalfLeft.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\grassHalfMid.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\grassHalfRight.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bridge" sid="996763063450849">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="603963430209726">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="511003885824970">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735774834782907" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\bridge.png">
+                        <collision-poly>
+                            <point x="6.51926e-009" y="0.7" />
+                            <point x="1" y="0.7" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blackhole" sid="305654482747070">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629805760108691" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Watermain" sid="746040119524037">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="623411756351460">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\liquidWaterTop_mid.png" />
+        </object-type>
+        <object-type name="Waterextra" sid="160004096575143">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="959200065250968">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301747554380781" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Tiles\liquidWater.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="leftbtn" sid="557532468855920">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="215533394508860" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-onscreen-controls\lineDark19.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rightbtn" sid="491164283455809">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453369549988263" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-onscreen-controls\lineDark20.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lineDark3" sid="441000846768593">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="851852703516101" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-onscreen-controls\lineDark21.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lineDark4" sid="815591001515730">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="347215126098305" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-onscreen-controls\lineDark21.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lineDark5" sid="763433455440112">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="968362424638602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-onscreen-controls\lineDark21.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jumpbtn" sid="526838619916874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="364734359540134" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-onscreen-controls\lineDark21.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pause" sid="571634002818469">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653593722190367" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\pause.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nosound" sid="545253097399512">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="781621895081277" speed="0">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\sound.png" />
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\no-sound.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="915027198278118">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="980956817317093" speed="0">
+                    <frame duration="0" hotspotX="0.503067" hotspotY="0.511111" />
+                    <frame duration="0" hotspotX="0.503067" hotspotY="0.511111" />
+                    <frame duration="0" hotspotX="0.503067" hotspotY="0.511111" />
+                    <frame duration="10" hotspotX="0.503067" hotspotY="0.511111" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="154376014437296">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="hero" sid="731056635326104">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="377460614177019">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242841843011949" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="heroanimation" sid="228631663035777">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="307298611836088">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="403396074043024">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="210768428881545" speed="25">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\Players\bunny1_ready.png">
+                        <collision-poly>
+                            <point x="0.341667" y="0.198068" />
+                            <point x="0.5" y="0" />
+                            <point x="0.766667" y="0.135266" />
+                            <point x="0.983333" y="0.497585" />
+                            <point x="0.733333" y="0.845411" />
+                            <point x="0.5" y="1" />
+                            <point x="0.258333" y="0.850242" />
+                            <point x="0.0166667" y="0.497585" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="jumping" pingpong="0" repeatcount="1" repeatto="0" sid="474589542560922" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\Players\bunny1_jump.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.248619" />
+                            <point x="0.5" y="0.270718" />
+                            <point x="0.7" y="0.248619" />
+                            <point x="0.86" y="0.497238" />
+                            <point x="0.94" y="0.950276" />
+                            <point x="0.5" y="1" />
+                            <point x="0.06" y="0.950276" />
+                            <point x="0.14" y="0.497238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="10" loop="1" name="wallking" pingpong="0" repeatcount="1" repeatto="0" sid="764743768456554" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\Players\bunny1_walk2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\Players\bunny1_walk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="162305634396999">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="lifes" sid="197823097034813">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598360254594921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\HUD\lifes.png">
+                        <collision-poly>
+                            <point x="0.211538" y="0.15493" />
+                            <point x="0.5" y="0" />
+                            <point x="0.807692" y="0.140845" />
+                            <point x="0.961538" y="0.492958" />
+                            <point x="0.865385" y="0.901408" />
+                            <point x="0.5" y="1" />
+                            <point x="0.134615" y="0.901408" />
+                            <point x="0.0384615" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lifes2" sid="747220921714564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818464767781579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\jumperpack_kenney\PNG\HUD\lifes.png">
+                        <collision-poly>
+                            <point x="0.211538" y="0.15493" />
+                            <point x="0.5" y="0" />
+                            <point x="0.807692" y="0.140845" />
+                            <point x="0.961538" y="0.492958" />
+                            <point x="0.865385" y="0.901408" />
+                            <point x="0.5" y="1" />
+                            <point x="0.134615" y="0.901408" />
+                            <point x="0.0384615" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="snail" sid="891933230903988">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="397010147711379">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="352013208305345" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Enemies\snailWalk1.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.290323" />
+                            <point x="0.5" y="0.0322581" />
+                            <point x="0.888889" y="0.193548" />
+                            <point x="0.962963" y="0.483871" />
+                            <point x="0.981481" y="0.967742" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0740741" y="0.870968" />
+                            <point x="0.0740741" y="0.483871" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508772" hotspotY="1" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Enemies\snailWalk2.png">
+                        <collision-poly>
+                            <point x="0.157895" y="0.290323" />
+                            <point x="0.491228" y="0.0645161" />
+                            <point x="0.894737" y="0.193548" />
+                            <point x="0.964912" y="0.483871" />
+                            <point x="0.982456" y="0.967742" />
+                            <point x="0.491228" y="1" />
+                            <point x="0.0526316" y="0.903226" />
+                            <point x="0.0701754" y="0.483871" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fly" sid="675277985028260">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="112929936116430">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="315113994875120">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="755227324849027" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Enemies\flyFly1.png">
+                        <collision-poly>
+                            <point x="0.944444" y="0.888889" />
+                            <point x="0.5" y="0.861111" />
+                            <point x="0.0555556" y="0.888889" />
+                            <point x="0.152778" y="0.5" />
+                            <point x="0.222222" y="0.444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.791667" y="0.416667" />
+                            <point x="0.861111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.516129" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Enemies\flyFly2.png">
+                        <collision-poly>
+                            <point x="0.0533333" y="0.129032" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.933333" y="0.16129" />
+                            <point x="0.986667" y="0.483871" />
+                            <point x="0.84" y="0.612903" />
+                            <point x="0.493333" y="1" />
+                            <point x="0.186667" y="0.548387" />
+                            <point x="0.0266667" y="0.483871" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blockerMad" sid="702205027384204">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="840933139346908">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="305557943283976" speed="0">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="1" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Enemies\blockerSad.png">
+                        <collision-poly>
+                            <point x="0.0392157" y="0.0392157" />
+                            <point x="0.490196" y="0" />
+                            <point x="0.941176" y="0.0588235" />
+                            <point x="1" y="0.490196" />
+                            <point x="0.941176" y="0.941176" />
+                            <point x="0.490196" y="1" />
+                            <point x="0.0588235" y="0.941176" />
+                            <point x="0" y="0.490196" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509804" hotspotY="1" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Enemies\blockerMad.png">
+                        <collision-poly>
+                            <point x="0.0392157" y="0.0392157" />
+                            <point x="0.490196" y="0" />
+                            <point x="0.941176" y="0.0588235" />
+                            <point x="1" y="0.490196" />
+                            <point x="0.941176" y="0.941176" />
+                            <point x="0.490196" y="1" />
+                            <point x="0.0588235" y="0.941176" />
+                            <point x="0" y="0.490196" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="slime" sid="872616726635333">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="239473254286687">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143169096225331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Enemies\slimeWalk1.png">
+                        <collision-poly>
+                            <point x="0.12" y="0.214286" />
+                            <point x="0.5" y="0.0357143" />
+                            <point x="0.8" y="0.357143" />
+                            <point x="0.82" y="0.5" />
+                            <point x="0.98" y="0.964286" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02" y="0.964286" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509804" hotspotY="1" original-source="D:\Criação de jogos com construct 2\kenney-platformer-art-base-pack\Enemies\slimeWalk2.png">
+                        <collision-poly>
+                            <point x="0.117647" y="0.230769" />
+                            <point x="0.490196" y="0.0384615" />
+                            <point x="0.784314" y="0.423077" />
+                            <point x="0.803922" y="0.5" />
+                            <point x="0.980392" y="0.961538" />
+                            <point x="0.490196" y="1" />
+                            <point x="0.0196078" y="0.961538" />
+                            <point x="0.0196078" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameoverpanel" sid="787789778019860">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141632408785645" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502164" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\gameover-panel.png">
+                        <collision-poly>
+                            <point x="0.0919811" y="0.168831" />
+                            <point x="0.5" y="0" />
+                            <point x="0.926887" y="0.134199" />
+                            <point x="0.903302" y="0.822511" />
+                            <point x="0.5" y="0.978355" />
+                            <point x="0.0825472" y="0.848485" />
+                            <point x="0.0683962" y="0.497835" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameoverback" sid="208637044712065">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="217639672135875" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\game-over-back.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\game-over-continue.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameovercontinue" sid="636899581454437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="940066913524791" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\game-over-continue.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameoverback2" sid="471078449873717">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="704566224923798">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="894015227282624" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\game-over-back.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameovercontinue2" sid="150920797863630">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="440233594259998">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="786504936041604" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="D:\Criação de jogos com construct 2\gui-mobile-pack\game-over-continue.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Shadow" sid="250263896105501">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="521059921457686" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Nishaadventures.xml</layout>
+        <layout>Level1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>es-game.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="1">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="96" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
